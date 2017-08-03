@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Parallel test suite]" parallel="tests">
+  <test name="Test1(failed)" parallel="tests">
+    <classes>
+      <class name="assignmnet6.Test.TestExel">
+        <methods>
+          <include name="VerifyInvalidLogin" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- assignmnet6.Test.TestExel -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test(failed)" parallel="tests">
+    <classes>
+      <class name="assignmnet6.Test.TestExel">
+        <methods>
+          <include name="VerifyInvalidLogin" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- assignmnet6.Test.TestExel -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Parallel test suite] -->
